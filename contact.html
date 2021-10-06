@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.coffee.Contact</title>
+    <link rel="stylesheet" href="/application.css">
+</head>
+<body>
+    <header>
+
+     <div class="navbar">
+         <img src="/Assets/full_logo_white.png" alt="coffee white logo" style="width: 8%;" align="left">
+        
+         <ul>
+            <li><a class="active" href="index.html">Accueil</a></li>
+      <li><a href="about.html">Qui sommes-nous?</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+           </ul>
+
+    </div>
+     </header>
+    
+  
+    <main>
+
+           <a href="#"><img src="/Assets/logo_mrcoffee.png" style="width:20%" class="img"></a>
+        <div class="center text" >
+            <h2>Dites nous tout !</h2>
+          <div class="form-center"> 
+            <form action="/contact.html">
+                <label for="lname">Nom *</label><br>
+                <input type="text" id="lname" name="lname" value="" required><br><br>
+                <label for="fname">Prénom *</label><br>
+                <input type="text" id="fname" name="fname" value="" required><br><br>
+                <label for="phone">Téléphone</label><br>
+                <input type="tel" id="phone" name="phone"  placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+                <label for="email">Adresse mail *</label><br>
+                <input type="email" id="email" name="email"required><br><br>
+                <label for="message">Message *</label><br>
+                <textarea id="type message" name="message"required>Tapez votre message ici
+                    </textarea><br><br>
+                
+             <button class="button  button1">ENVOYER</button>
+
+              </form> 
+        </div>
+
+              <h2>On vous attend!</h2>
+
+        </div>
+
+        <div class="row">
+           <div class="top">
+        <h3>Mr.Coffee</h3>
+        <p> place Jules Guesde<br>75006 Paris</p>
+       
+        <p>Tel : +33 9 46 25 78 45 <br>Mail : contact@mr-coffee.com</p>
+       
+     </div>
+    <div class="map"> <img src="/Assets/carte_contact.png" alt="Contact Map">
+    </div>
+  </div>
+
+    </main>
+
+    <footer class= "bottom">
+        
+            <p>Suivez nous sur les réseaux sociaux ! </p>
+                
+            <img src="/Assets/logo_blanc.png" style="width: 2%" alt="Blanc Logo" align="left">
+
+            <div class="social">
+
+                <img src="/Assets/logo_linkedin.png" alt="linkedin logo">
+            <img src="/Assets/logo_twitter.png" alt="twitter logo">
+           <img src="/Assets/logo_facebook.png" alt ="facebook logo">
+
+    </div>
+    </footer>
+</body>
+</html>
