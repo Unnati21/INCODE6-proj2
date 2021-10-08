@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr.coffee.Contact</title>
     <link rel="stylesheet" href="/application.css">
+    <script src="/form.js" defer></script>
 </head>
 <body>
+  <div class="modal-overlay"></div>
+  <dialog class="modal">
+    <img src="/Assets/logo_dark.png" alt="coffee Dark black logo" class="popupimg" >
+    <h3>MERCI
+      Votre message a bien été envoyé !</h3>
+      <p>Nous essaierons d’y répondre au mieux dans les plus brefs
+        délais. À bientot chez Mr.Coffee</p>
+        <button id ="close-modal" class="button2">FERMER</button>
+  </dialog>
     <header>
 
      <div class="navbar">
@@ -28,24 +38,40 @@
            <a href="#"><img src="/Assets/logo_mrcoffee.png" style="width:20%" class="img"></a>
         <div class="center text" >
             <h2>Dites nous tout !</h2>
-          <div class="form-center"> 
-            <form action="/contact.html">
-                <label for="lname">Nom *</label><br>
-                <input type="text" id="lname" name="lname" value="" required><br><br>
-                <label for="fname">Prénom *</label><br>
-                <input type="text" id="fname" name="fname" value="" required><br><br>
-                <label for="phone">Téléphone</label><br>
-                <input type="tel" id="phone" name="phone"  placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
-                <label for="email">Adresse mail *</label><br>
-                <input type="email" id="email" name="email"required><br><br>
-                <label for="message">Message *</label><br>
-                <textarea id="type message" name="message"required>Tapez votre message ici
-                    </textarea><br><br>
+            <section>
+               <div class="div1">
+            <form id="contact-form">
+              <div class="div2">
+                <label for="lname">Nom *</label>
+                <input type="text" id="lname" name="lname" placeholder="write last name" required>
+              </div>
+              
+              <div class="div2">
+                <label for="fname">Prénom *</label>
+                <input type="text" id="fname" name="fname" placeholder="write first name" required>
+              </div>
+
+              <div class="div2">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone"  placeholder="12-34-56-78-90" required>
+              </div>
                 
-             <button class="button  button1">ENVOYER</button>
+              <div class="div2">
+                <label for="email">Adresse mail *</label>
+                <input type="email" id="email" name="email" placeholder="write email" required>
+              </div>
+                
+              <div class="div2">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required></textarea>
+                  </div>
+                  
+             <button type="submit">ENVOYER</button>
 
               </form> 
-        </div>
+              </div>
+              </section>
+        
 
               <h2>On vous attend!</h2>
 
