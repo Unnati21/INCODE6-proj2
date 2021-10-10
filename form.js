@@ -5,6 +5,7 @@ const lname = document.querySelector("#lname")
 const fname = document.querySelector("#fname")
 const phone = document.querySelector("#phone")
 const email = document.querySelector("#email")
+const nameField = document.querySelector("input")
 const message = document.querySelector("#message")
 
 //modal Elements
@@ -23,7 +24,7 @@ const phoneRegex = /(\(\+33\)|0|\+33|0033)[1-9]([0-9]{8}|([0-9\- ]){12})/g
 0633107246
 06 33 10 72 46 
 06-33-10-72-46 
-(+33)633107246 
+(+33)633107246
 +33633107246 
 */
 
@@ -40,7 +41,7 @@ closeModalButton.addEventListener("click",closeModal)
 
 function validateForm(e){
  e.preventDefault()
-
+ 
  /*validate each input*/
  if (isValid(lname, lnameRegex) && isValid(fname, fnameRegex) && isValid(phone, phoneRegex) && isValid(email, emailRegex) && isValid(message, messageRegex))
  {
@@ -52,7 +53,7 @@ function validateForm(e){
          console.log("Not Valid")
      }
  }
-
+  
  function isValid(element, regex){
   return regex.test(element.value)
 
@@ -73,3 +74,18 @@ function closeModal(){
   modalOverlay.classList.remove("active")
 
 }
+
+
+
+
+
+
+nameField.addEventListener("input", () => {
+  nameField.setCustomValidity("");
+  nameField.checkValidity();
+  console.log(nameField.checkValidity());
+});
+
+nameField.addEventListener("invalid", () => {
+  nameField.setCustomValidity("Please fill in proper data.");
+});

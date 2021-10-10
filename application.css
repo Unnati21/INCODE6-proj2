@@ -187,6 +187,7 @@ main{
     margin: 0%;
     text-align: center;
     font-weight: 900;
+     margin-top: 5%;
 }
 .cards{
  display: flex;
@@ -456,6 +457,7 @@ button {
   text-align: center;
   text-decoration: none;
   border: none;
+  margin-top: 5%;
  }
  .button2{
   background-color: rgb(70, 63, 100);
@@ -503,11 +505,16 @@ textarea {
 
 .div1{
 
-  display: block;
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 .div2{
   margin: 2%;
+  display: flex;
+    align-items: start;
+    flex-flow: column;
+
 }
 
 /* MODAL-----------------------------*/
@@ -557,3 +564,4 @@ background: rgba(140, 140, 140,0.5);
 position: fixed;
 z-index: 998;
 }
+/*-----Error Message-------*/
